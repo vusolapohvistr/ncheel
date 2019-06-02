@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        axios.defaults.xsrfCookieName = 'csrftoken';
+        axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+        function submit() {
+            axios.post('/tutorsapp/login/', JSON.stringify({login: 'admin', password: '123qwe'})).then(response => {
+                console.log(response)
+            })
+        }
+    </script>
+    <style>
+        #parent {
+            display: table;
+            width: 100%;
+        }
+        #login {
+           display: table-cell;
+           text-align: center;
+           vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<script>
+    alert('{{ message }}')
+</script>
+<div id="parent">
+    <div id="login">
+        <form action="/tutorsapp/login/" method="post">{% csrf_token %}
+            <label>Login:
+            <input type="text" name="username">
+            </label>
+            <label>>Password:
+            <input type="text" name="password">
+            </label>
+            <input type="button" value="Login" onclick="submit">
+        </form>
+    </div>
+</div>
+</body>
+</html>
