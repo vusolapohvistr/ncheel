@@ -32,7 +32,6 @@ class TestTemplatesView(viewsets.ModelViewSet):
     serializer_class = TestTemplatesSerializer
 
     def list(self, request, *args, **kwargs):
-        # mc - mongo client
         response_data = [{'title': template.title,
                           'last_update_date': template.last_update_date,
                           'id': template.id,
@@ -69,9 +68,9 @@ class AnswersView(viewsets.ModelViewSet):
         pass
 
     @action(detail=True)
-    def get_test_md5(self, request):
-        md5_sum = request.query_params['link']
-        answer = Answers.objects.get(md5_sum=md5_sum)
+    def get_test_by_key(self, request):
+        key = request.query_params['key']
+        answer = Answers.objects.get(key=key)
         if answer.id_schedule.time_start > datetime.datetime.now() \
                 or answer.id_schedule.time_end < datetime.datetime.now():
             return Response(status=404)
@@ -90,8 +89,10 @@ def main(request):
 
 
 def test_page(request):
-    md5_sum = request.GET['link']
-    answer = Answers.objects.get(md5_sum=md5_sum)
+    key = request.GET['key']
+    answer = Answers.objects.get(key=key)
+    if not answer:
+        return HttpResponse(status=404)
     if answer.id_schedule.time_start > datetime.datetime.now() \
             or answer.id_schedule.time_end < datetime.datetime.now():
         return HttpResponseRedirect('https://www.youtube.com/watch?v=dQw4w9WgXcQ')

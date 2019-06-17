@@ -13,7 +13,7 @@ urlpatterns = [
     path('login/', views.login),
     path('tutorsapp/api/', include(router.urls)),
     path('tutorsapp/', views.main),
-    path('test/get_test', views.test_page)
+    path('test', views.test_page)
 ]
 
 

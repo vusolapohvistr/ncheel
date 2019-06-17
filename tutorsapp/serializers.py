@@ -52,12 +52,12 @@ class TestScheduleSerializer(serializers.ModelSerializer):
         subject = test.id_test_template.title
         from_email = ''  # DON'T FORGET FILL THIS IF NOT G'MAIL
         for email in validated_data['emails'].split(','):
-            md5_sum = secrets.token_urlsafe(16)
+            key = secrets.token_urlsafe(16)
             Answers.objects.create(email=email,
-                                   md5_sum=md5_sum,
+                                   key=key,
                                    id_schedule=test.id)
             message = ''  # DON'T FORGET TO GENERATE LINK IN MESSAGE
-            # to (your www address) + 'test/get_test?link=' + md5_sum
+            # to (your www address) + 'test?key=' + key
             sends.append((subject, message, from_email, [email]))
         send_mass_mail(tuple(sends))
 
@@ -68,6 +68,12 @@ class AnswersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answers
         fields = ('date_pass', 'name', 'surname', 'class_name', 'id', 'victim_mac_address')
+
+    def create(self, validated_data):
+        print(validated_data)
+        mongo_client = pymongo.MongoClient('mongodb://localhost:27017')["ncheel"]
+        # end it, student's answer sheet
+        pass
 
 
 
