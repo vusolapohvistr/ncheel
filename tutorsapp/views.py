@@ -28,6 +28,15 @@ def login(request):
         return HttpResponse(status=404)
 
 
+def registration(request):
+    if request.method == 'POST':
+        data = json.loads(request.body.decode('utf-8'))
+        User.objects.create_user(data['username'], data['email'], data['password'])
+        return HttpResponse(status=200)
+    else:
+        return HttpResponse(status=404)
+
+
 class TestTemplatesView(viewsets.ModelViewSet):
     # permission_classes = (IsAuthenticated,)
     queryset = TestTemplates.objects.all()
@@ -46,10 +55,10 @@ class TestTemplatesView(viewsets.ModelViewSet):
         template = TestTemplates.objects.get(pk=pk)
         if request.user.id != template.id_user:
             return Response(status=401)
-        mc = pymongo.MongoClient('mongodb://localhost:27017/')
+        mc = pymongo.MongoClient('mongodb://localhost:27017/')['ncheel']
         response_data = {
             'title': template.title,
-            'template': mc["ncheel"]["test_templates"].find_one({'id': template.id}),
+            'template': mc["test_templates"].find_one({'id': template.id}),
             'last_update_date': template.last_update_date,
             'description': template.description
         }
@@ -69,13 +78,34 @@ class AnswersView(viewsets.ModelViewSet):
     def list(self, request, *args, **kwargs):
         pass
 
+    def partial_update(self, request, pk=None, *args, **kwargs):
+        mc = pymongo.MongoClient('mongodb://localhost:27017')["ncheel"]
+        answer = Answers.objects.get(pk=pk)
+        answer.name, answer.surname, answer.class_name = \
+            request.data['name'], request.data['surname'], request.data['class_name']
+        answer.save()
+        mc['answers'].insert_one({'id': answer.id, 'answer': request.data['answer']})
+        return Response(status=200)
+
+
     @action(detail=True)
     def get_test_by_key(self, request):
         key = request.query_params['key']
+        victim_mac_address = request.query_params['m']
         answer = Answers.objects.get(key=key)
+
+        # check student's mac, if empty fill it, else 404
+        if answer.victim_mac_address == 'empty':
+            answer.victim_mac_address = victim_mac_address
+        elif answer.victim_mac_address != victim_mac_address:
+            return Response(status=404)
+        else:
+            answer.victim_mac_address = victim_mac_address
+        # check time
         if answer.id_schedule.time_start > datetime.datetime.now() \
                 or answer.id_schedule.time_end < datetime.datetime.now():
             return Response(status=404)
+
         mongo_client = pymongo.MongoClient('mongodb://localhost:27017/')
         return Response({
             'template': mongo_client["ncheel"]  # LOOK 1 LINE DOWN !!!
@@ -87,7 +117,8 @@ class AnswersView(viewsets.ModelViewSet):
 
 
 def main(request):
-    render_to_response('tutorsapp/index.html')
+    print(request)
+    return render(request, 'tutorsapp/login/index.html')
 
 
 def test_page(request):

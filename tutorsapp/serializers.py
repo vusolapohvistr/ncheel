@@ -9,6 +9,7 @@ from django.core.mail import send_mass_mail
 
 class TestTemplatesSerializer(serializers.ModelSerializer):
     test_template_json = serializers.CharField(write_only=True)
+    id_user = serializers.CharField(read_only=True)
 
     class Meta:
         model = TestTemplates
@@ -21,7 +22,7 @@ class TestTemplatesSerializer(serializers.ModelSerializer):
         if request and hasattr(request, "user"):
             user = request.user
         test_template = TestTemplates(
-            id_user=user.id,
+            id_user=user,
             title=validated_data['title'],
             max_possible_result=validated_data['max_possible_result'],
             description=validated_data['description']
@@ -52,7 +53,7 @@ class TestScheduleSerializer(serializers.ModelSerializer):
         subject = test.id_test_template.title
         from_email = ''  # DON'T FORGET FILL THIS IF NOT G'MAIL
         for email in validated_data['emails'].split(','):
-            key = secrets.token_urlsafe(16)
+            key = secrets.token_urlsafe(32)
             Answers.objects.create(email=email,
                                    key=key,
                                    id_schedule=test.id)
@@ -69,9 +70,10 @@ class AnswersSerializer(serializers.ModelSerializer):
         model = Answers
         fields = ('date_pass', 'name', 'surname', 'class_name', 'id', 'victim_mac_address')
 
-    def create(self, validated_data):
+    def update(self, instance, validated_data):
         print(validated_data)
         mongo_client = pymongo.MongoClient('mongodb://localhost:27017')["ncheel"]
+        answer = Answers.objects.get(id)
         # end it, student's answer sheet
         pass
 

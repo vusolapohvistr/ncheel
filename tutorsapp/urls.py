@@ -11,6 +11,7 @@ router.register(r'answers', views.AnswersView)
 
 urlpatterns = [
     path('login/', views.login),
+    path('registration/', views.registration),
     path('tutorsapp/api/', include(router.urls)),
     path('tutorsapp/', views.main),
     path('test', views.test_page)

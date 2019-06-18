@@ -27,4 +27,4 @@ class Answers(models.Model):
     class_name = models.CharField(max_length=10)
     result = models.SmallIntegerField()
     victim_mac_address = models.CharField(max_length=20, default='empty')
-    key = models.CharField(max_length=100)
+    key = models.CharField(max_length=100, default='dsycfgcrvdxfgggfhjvjy7tgfvb3b483n23123serddsdrq78yhy')

@@ -8,9 +8,14 @@
         axios.defaults.xsrfCookieName = 'csrftoken';
         axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
         function submit() {
-            axios.post('/tutorsapp/login/', JSON.stringify({login: 'admin', password: '123qwe'})).then(response => {
+            axios.post('/login/', JSON.stringify({username: 'example', password: '123qwe'})).then(response => {
                 console.log(response)
             })
+        }
+        function registration() {
+            axios.post('/registration/', JSON.stringify({username: 'example', email: 'ex@ex.ua', password: '123qwe'})).then(
+                response => console.log(response)
+            )
         }
     </script>
     <style>
@@ -26,20 +31,10 @@
     </style>
 </head>
 <body>
-<script>
-    alert('{{ message }}')
-</script>
 <div id="parent">
     <div id="login">
-        <form action="/tutorsapp/login/" method="post">{% csrf_token %}
-            <label>Login:
-            <input type="text" name="username">
-            </label>
-            <label>>Password:
-            <input type="text" name="password">
-            </label>
-            <input type="button" value="Login" onclick="submit">
-        </form>
+        <input type="button" value="Login" onclick="submit()">
+        <input type="button" value="reg" onclick="registration()">
     </div>
 </div>
 </body>
