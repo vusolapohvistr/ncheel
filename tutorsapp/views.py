@@ -24,6 +24,8 @@ def login(request):
             return HttpResponse(request)
         else:
             return HttpResponse('Incorrect login or password', status=401)
+    else:
+        return HttpResponse(status=404)
 
 
 class TestTemplatesView(viewsets.ModelViewSet):
