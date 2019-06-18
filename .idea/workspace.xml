@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a6d1499-5da9-4602-904e-07e9bc6bc107" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tutorsapp/api_docs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorsapp/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorsapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorsapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorsapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorsapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="9a6d1499-5da9-4602-904e-07e9bc6bc107" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +48,13 @@
           <entry key="cnf" value="6" />
           <entry key="html" value="405" />
           <entry key="py" value="7470" />
-          <entry key="txt" value="258" />
+          <entry key="txt" value="307" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="405" />
-          <entry key="PLAIN_TEXT" value="264" />
+          <entry key="PLAIN_TEXT" value="313" />
           <entry key="Python" value="7470" />
         </counts>
       </usages-collector>
@@ -134,8 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorsapp/api_docs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="506">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -197,7 +188,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="35" />
     <option name="width" value="1387" />
     <option name="height" value="946" />
@@ -349,7 +340,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -549,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorsapp/api_docs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="506">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

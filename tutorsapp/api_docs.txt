@@ -20,5 +20,12 @@ or a lot better example (using stringify):
     "description": "axios",
     "max_possible_result": 1488
 })
+another programming level (no scopes):
+axios.post('api/test_templates/', {
+    test_template_json: JSON.stringify(a),
+    title: "test axios 3, JSON stringify, no scopes",
+    description: "axios no scopes",
+    max_possible_result: 1488
+})
 
 
