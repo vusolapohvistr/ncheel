@@ -7,6 +7,7 @@ router = routers.DefaultRouter()
 router.register(r'test_templates', views.TestTemplatesView)
 router.register(r'test_schedule', views.TestScheduleView)
 router.register(r'answers', views.AnswersView)
+router.register(r'image', views.ImageView)
 
 
 urlpatterns = [

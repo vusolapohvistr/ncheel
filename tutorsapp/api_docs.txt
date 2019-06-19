@@ -6,26 +6,19 @@ API:
 root: /tutorsapp/api/
 
 adding test template:
-    axios example ::
-    axios.post('api/test_templates/', {
-    "test_template_json": "{\"template\":[{\"question\":\"q\",\"options\":[\"q\"]}],\"answers\":[\"0\"]}",
-    "title": "test axios",
-    "description": "axios",
-    "max_possible_result": 1488
-})
-or a lot better example (using stringify):
-    axios.post('api/test_templates/', {
-    "test_template_json": JSON.stringify(a),
-    "title": "test axios 2, JSON stringify",
-    "description": "axios",
-    "max_possible_result": 1488
-})
-another programming level (no scopes):
 axios.post('api/test_templates/', {
     test_template_json: JSON.stringify(a),
     title: "test axios 3, JSON stringify, no scopes",
     description: "axios no scopes",
     max_possible_result: 1488
 })
+
+adding image:
+link - tutorsapp/api/images/
+POST - upload image, returns image id and url
+
+get image:
+every image has own url
+
 
 

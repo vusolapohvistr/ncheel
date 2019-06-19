@@ -5,12 +5,13 @@ from django.contrib.auth import authenticate, login as django_login
 import pymongo
 import datetime
 from rest_framework.response import Response
-from rest_framework import viewsets
+from rest_framework import viewsets, views
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action, permission_classes
-from .models import TestTemplates, TestSchedule, Answers
-from .serializers import TestTemplatesSerializer, TestScheduleSerializer, AnswersSerializer
+from .models import TestTemplates, TestSchedule, Answers, Images
+from .serializers import TestTemplatesSerializer, TestScheduleSerializer, AnswersSerializer, ImageSerializer
 import json
+import secrets
 
 # Create your views here.
 
@@ -53,12 +54,13 @@ class TestTemplatesView(viewsets.ModelViewSet):
 
     def retrieve(self, request, pk=None, *args, **kwargs):
         template = TestTemplates.objects.get(pk=pk)
-        if request.user.id != template.id_user:
+        if request.user != template.id_user:
             return Response(status=401)
         mc = pymongo.MongoClient('mongodb://localhost:27017/')['ncheel']
+        print(template)
         response_data = {
             'title': template.title,
-            'template': mc["test_templates"].find_one({'id': template.id}),
+            'template': mc["test_templates"].find_one({'id': template.id})['test_template'],
             'last_update_date': template.last_update_date,
             'description': template.description
         }
@@ -114,6 +116,27 @@ class AnswersView(viewsets.ModelViewSet):
             'time_end': answer.id_schedule.time_end,
             'answer_id': answer.id
         })
+
+
+class ImageView(viewsets.ModelViewSet):
+    queryset = Images.objects.all()
+    serializer_class = ImageSerializer
+
+    def list(self, request, *args, **kwargs):
+        query = request.query_params
+        print(query)
+        if query:
+            try:
+                image = Images.objects.get(key=query['key'])
+                return Response(image.image.path)
+            except Exception:
+                return Response(status=404)
+        else:
+            return Response([{'path': image.image.url} for image in Images.objects.all()])
+
+    def retrieve(self, request, *args, **kwargs):
+        return Response(status=404)
+
 
 
 def main(request):

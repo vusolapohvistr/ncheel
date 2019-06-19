@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a6d1499-5da9-4602-904e-07e9bc6bc107" name="Default Changelist" comment="" />
+    <list default="true" id="9a6d1499-5da9-4602-904e-07e9bc6bc107" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncheel/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncheel/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ncheel/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ncheel/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorsapp/api_docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/api_docs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorsapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorsapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorsapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorsapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorsapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,24 +26,24 @@
     <session id="551535550">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cnf" value="1" />
           <entry key="html" value="9" />
-          <entry key="py" value="27" />
+          <entry key="py" value="29" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -40,22 +51,22 @@
         <counts>
           <entry key="HTML" value="9" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="27" />
+          <entry key="Python" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cnf" value="6" />
-          <entry key="html" value="405" />
-          <entry key="py" value="7470" />
-          <entry key="txt" value="307" />
+          <entry key="html" value="422" />
+          <entry key="py" value="8896" />
+          <entry key="txt" value="456" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="405" />
-          <entry key="PLAIN_TEXT" value="313" />
-          <entry key="Python" value="7470" />
+          <entry key="HTML" value="422" />
+          <entry key="PLAIN_TEXT" value="462" />
+          <entry key="Python" value="8896" />
         </counts>
       </usages-collector>
     </session>
@@ -65,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ncheel/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-232">
-              <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+            <state relative-caret-position="297">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -74,10 +85,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorsapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+            <state relative-caret-position="389">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+                <marker date="1560943980386" expanded="true" signature="1197:1202" ph="..." />
               </folding>
             </state>
           </provider>
@@ -86,11 +98,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorsapp/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="297">
+              <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <marker date="1560877966600" expanded="true" signature="1429:1434" ph="..." />
+                <marker date="1560943980382" expanded="true" signature="1437:1442" ph="..." />
+                <marker date="1560943980382" expanded="true" signature="3007:3078" ph="..." />
               </folding>
             </state>
           </provider>
@@ -99,25 +112,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorsapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+            <state relative-caret-position="-48">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
               <folding>
                 <element signature="e#0#74#0" expanded="true" />
-                <marker date="1560876431548" expanded="true" signature="1145:1411" ph="..." />
-                <marker date="1560876431548" expanded="true" signature="1458:1463" ph="..." />
-                <marker date="1560876431548" expanded="true" signature="2812:4605" ph="..." />
-                <marker date="1560876431548" expanded="true" signature="2937:3428" ph="..." />
-                <marker date="1560876431548" expanded="true" signature="3016:3428" ph="..." />
+                <marker date="1560940797139" expanded="true" signature="1192:1458" ph="..." />
+                <marker date="1560940797139" expanded="true" signature="1505:1510" ph="..." />
+                <marker date="1560940797139" expanded="true" signature="2897:5325" ph="..." />
+                <marker date="1560940797139" expanded="true" signature="3022:3513" ph="..." />
+                <marker date="1560940797139" expanded="true" signature="3101:3513" ph="..." />
+                <marker date="1560940797139" expanded="true" signature="5322:5325" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -125,17 +130,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorsapp/api_docs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tutorsapp/templates/tutorsapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="391">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -143,10 +139,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorsapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="414">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ncheel/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <folding>
+                <element signature="e#630#662#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,14 +178,14 @@
       <list>
         <option value="$PROJECT_DIR$/etc/cfg.cnf" />
         <option value="$PROJECT_DIR$/tutorsapp/templates/tutorsapp/main.html" />
-        <option value="$PROJECT_DIR$/ncheel/settings.py" />
-        <option value="$PROJECT_DIR$/ncheel/urls.py" />
         <option value="$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/test_page.html" />
-        <option value="$PROJECT_DIR$/tutorsapp/urls.py" />
-        <option value="$PROJECT_DIR$/tutorsapp/views.py" />
         <option value="$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/index.html" />
-        <option value="$PROJECT_DIR$/tutorsapp/models.py" />
+        <option value="$PROJECT_DIR$/tutorsapp/views.py" />
+        <option value="$PROJECT_DIR$/ncheel/settings.py" />
         <option value="$PROJECT_DIR$/tutorsapp/serializers.py" />
+        <option value="$PROJECT_DIR$/tutorsapp/models.py" />
+        <option value="$PROJECT_DIR$/tutorsapp/urls.py" />
+        <option value="$PROJECT_DIR$/ncheel/urls.py" />
         <option value="$PROJECT_DIR$/tutorsapp/api_docs.txt" />
       </list>
     </option>
@@ -188,7 +196,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="35" />
     <option name="width" value="1387" />
     <option name="height" value="946" />
@@ -216,6 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,50 +235,17 @@
             <path>
               <item name="ncheel" type="b2602c69:ProjectViewProjectNode" />
               <item name="ncheel" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ncheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ncheel" type="462c0819:PsiDirectoryNode" />
-              <item name="ncheel" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ncheel" type="b2602c69:ProjectViewProjectNode" />
               <item name="ncheel" type="462c0819:PsiDirectoryNode" />
               <item name="tutorsapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ncheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ncheel" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorsapp" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ncheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ncheel" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorsapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ncheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ncheel" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorsapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorsapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ncheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ncheel" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorsapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="tutorsapp" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -281,11 +257,12 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ncheel" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ncheel\tutorsapp\templates\tutorsapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ncheel\static" />
+      <recent name="D:\ncheel" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,7 +318,30 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28304905" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50319827" side_tool="true" weight="0.3215859" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4968017" visible="true" weight="0.3215859" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32929516" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28304905" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,29 +357,6 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50319827" side_tool="true" weight="0.3215859" />
       <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4968017" visible="true" weight="0.3215859" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32929516" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2707889" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50319827" side_tool="true" weight="0.3215859" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4968017" visible="true" weight="0.3215859" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,20 +412,6 @@
     <entry file="file://$PROJECT_DIR$/tutorsapp/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ncheel/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ncheel/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-232">
-          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/5410850/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2293">
@@ -477,13 +440,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorsapp/urls.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/rest_framework/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-6709">
+          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -494,53 +454,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ncheel/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorsapp/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1560943980382" expanded="true" signature="1437:1442" ph="..." />
+            <marker date="1560943980382" expanded="true" signature="3007:3078" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tutorsapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+        <state relative-caret-position="389">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+            <marker date="1560943980386" expanded="true" signature="1197:1202" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorsapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ncheel/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorsapp/templates/tutorsapp/login/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="437">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorsapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state relative-caret-position="-48">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
           <folding>
             <element signature="e#0#74#0" expanded="true" />
-            <marker date="1560876431548" expanded="true" signature="1145:1411" ph="..." />
-            <marker date="1560876431548" expanded="true" signature="1458:1463" ph="..." />
-            <marker date="1560876431548" expanded="true" signature="2812:4605" ph="..." />
-            <marker date="1560876431548" expanded="true" signature="2937:3428" ph="..." />
-            <marker date="1560876431548" expanded="true" signature="3016:3428" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutorsapp/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1560877966600" expanded="true" signature="1429:1434" ph="..." />
+            <marker date="1560940797139" expanded="true" signature="1192:1458" ph="..." />
+            <marker date="1560940797139" expanded="true" signature="1505:1510" ph="..." />
+            <marker date="1560940797139" expanded="true" signature="2897:5325" ph="..." />
+            <marker date="1560940797139" expanded="true" signature="3022:3513" ph="..." />
+            <marker date="1560940797139" expanded="true" signature="3101:3513" ph="..." />
+            <marker date="1560940797139" expanded="true" signature="5322:5325" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorsapp/api_docs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import TestTemplates, TestSchedule, Answers
+from .models import TestTemplates, TestSchedule, Answers, Images
 from django.contrib.auth.models import User
 import pymongo
 import json
@@ -77,6 +77,11 @@ class AnswersSerializer(serializers.ModelSerializer):
         # end it, student's answer sheet
         pass
 
+
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Images
+        fields = '__all__'
 
 
 
